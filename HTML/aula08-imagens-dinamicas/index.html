@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Altere o tamanho da tela</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzir áudios</h1>
+    <audio controls preload="metadata" loop >
+        <source src="midias/o-viado-apertou-o-play.mp3" type="audio/mpeg"><!--MP3-->
+        <source src="midias/o-viado-apertou-o-play.ogg" type="audio/ogg"><!--OGG-->
+        <source src="midias/o-viado-apertou-o-play.wav" type="audio/wav"><!--WAV, mais pesado-->
+        <p>Infelizmente o áudio não é compatível com o navegador, 
+            <a href="" download="midias/o-viado-apertou-o-play.mp3" target="_blank" type="audio/mpeg">clique aqui para baixar o áudio MP3</a>.
+        </p>
+    </audio>
+    <!--
+        MP3, WAV e OGG
+        <audio src="midias/o-viado-apertou-o-play.mp3" controls></audio>
+    -->
+    <h1>Reproduzir vídeos</h1>
+    <!--
+        MP4, WEBM, OGV, MP4V
+        <video src="videos/Fire-720.mp4" controls></video>
+    -->
+    <h2>Localmente</h2>
+    <video controls poster="imagens/fire-thumnail.png" width="720px">
+        <source src="videos/Fire-720.mp4" type="video/mp4">
+        <source src="videos/Fire-720.mkv" type="video/mkv">
+        <source src="videos/Fire-720.webm" type="video/webm">
+        <source src="videos/Fire-720.ogv" type="video/ogg">
+        <p>Seu navegador não suporta o formato do vídeo,
+            <a href="" download="videos/fire-1920x1080.mp4" target="_blank"></a>
+        </p>
+    </video>
+    <h1>Vídeos externos, não locais</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/stHbjWx79Dk?si=innyg177W3_kYFgl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        /*
+        Outline - "bordar em cima da bordar"
+        BOX-LEVEL = Toda a caixa (tags que possuem uma caixa em volta) fica de uma de baixo da outra. Ocupa a largura 100%. Independente. EXEMPLOS: <div>
+        INLINE-LEVEL = Não pula para a próxima linha, sem quebra de linha. EXEMPLOS: <span> (expansão de código), <input>
+        */
+        h1{
+            border: 10px solid black;
+            width: 300px;
+            height: 300px;
+            padding: auto;
+            outline: 10px dashed red;
+            outline-offset: 10px; /* Afasta o outline */
+            padding: 10px 20px 30px 40px;
+            /*
+            
+            padding: 10px 20px;
+            10px = cima e baixo, 20px esquerda e direita
+
+            margin: 10px auto 10px auto;
+            top, right, bottom, left
+
+            */
+            margin: 10px 20px 30px 40px;
+            box-shadow: 1px 1px 1px black;
+            /*
+            
+            box-shadow: horizontal vertical espalhamento cor;
+
+            */
+
+            border-radius: 2px 6px 12px 32px;;
+            /*
+            border-radius: (Cima-esquerda baixo direita)px (Baixo-esqueda Cima-direita)px
+            */
+        }
+        /*
+        
+        inline-block: vai ser um inline mas com elementos em bloco
+        
+        */
+        #bola{
+            width:100px;
+            height: 100px;
+            
+            background-color: black;
+            padding: 60px;
+            margin: auto;
+            border: 10px solid transparent;
+            border-image-source: url("borda.png");
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+            border-image: url("borda.png") 20 repeat;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-leves</h1>
+    <p>O parágrafo é box-level e <a href="#">link é inline-level</a></p>
+    <div id="bola"></div>
+</body>
+</html>

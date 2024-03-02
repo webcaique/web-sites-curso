@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android Family';
+    src: url('./fontes/idroid.otf') format('opentype');
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+strong, strong > a{
+    color: rgba(24,83,50,1);
+    text-decoration: none;
+}
+
+strong > a::after {
+    content: "🔗";
+}
+
+h1{
+    font-size: 2em;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #84e1ad;
+}
+
+header{
+    text-align: center;
+    background: linear-gradient(rgba(60,217,131,1) 0%, rgba(24,83,50,1) 100%);
+    padding: 0;
+    padding-block: 1px;
+    color: white;
+}
+
+
+nav > ul{
+    list-style: none;
+}
+
+nav > ul > li{
+    display: inline;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul > li > a:hover{
+    color: rgb(190, 190, 190);
+}
+
+nav > ul > li > a:active{
+    color:rgb(50, 50, 50);
+}
+
+nav{
+    text-align: left;
+}
+
+main{
+    margin: auto;
+    text-align: justify;
+    width: 700px;
+    background-color: white;
+    margin-top:0;
+    padding: 5px;
+    padding-inline: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    text-indent: 40px;
+}
+
+header > p {
+    text-indent: 0px;
+}
+
+main > section > h1, main > section > h2{
+    font-family: 'Android Family';
+    color:rgba(24,83,50,1);
+}
+
+#tabela{
+    padding: 0;
+}
+
+section#mais > ul#tabela{
+    list-style: none;
+}
+
+section#mais > ul#tabela > li {
+    margin:auto;
+    width:20em;
+    display: inline-block;   
+}
+
+#mais > #tabela > li > ul > li {
+    list-style-type: "\2714";
+    text-indent: 10px;
+}
+
+#mais > #tabela > li > ul > li > a {
+    color: black;
+}
+
+#mais > #tabela > li > ul > li > a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#mais > #tabela > li > ul > li > a:active {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+#mais {
+    background-color: #84e1ac78;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+#mais > h3{
+    padding-top: 5px;
+    margin: 0px;
+    color: white;
+    background-color:rgba(24,83,50,1);
+    border-radius: 10px 10px 0px 0px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+#mais > p {
+    padding-inline:10px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-block: 10px;
+    margin-top:1em;
+}
+
+footer > p {
+    margin: 0;
+}

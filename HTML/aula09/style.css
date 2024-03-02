@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightblue;
+    font-size: 20px;
+}
+h1{
+    color:red;
+    background-color: blue;
+}
+h2{
+    color: aliceblue;
+}
+p{
+    text-align: justify;
+}

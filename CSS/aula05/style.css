@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*
+ID (#)    = Em um único elemento!!!
+CLASS (.) = Usada por mais de um elemento!!
+
+PSEUDO-CLASSES 
+
+*/
+
+body{
+    margin:0;
+    
+}
+
+h1#main-title{
+    font-size: 2em;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
